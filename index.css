@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  z-index: 100;
+  padding: 0 20px;
+}
+
+.nav {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+.nav,
+.nav_item {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.nav_logo,
+.nav_link,
+.button {
+  color: #fff;
+}
+.nav_logo {
+  font-size: 25px;
+}
+.nav_item {
+  column-gap: 25px;
+  
+  
+
+}
+.nav_link,.button{
+  color: rgb(92, 88, 88);
+
+}
+.nav_link:hover,.button:hover {
+  color: #5e639d;
+}
+.button {
+  padding: 6px 24px;
+  border: 2px solid  #5e639d;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.button:active {
+  transform: scale(0.98);
+  background-color: #7c7e9a;
+}
+
+body{
+  background-image: url('yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1{
+  position:absolute;
+  top: 90px;
+  left: 300px;
+  
+  font-size:60px;
+  color:rgb(84, 91, 89);
+}
+.container {
+  width: 800px;
+  position:relative;
+  display:block;
+  
+  padding: 200px;
+ 
+  margin-left:250px;
+  
+
+}
+.container .forms{
+  background-color: #fff;
+  width: 600px;
+  padding:10px 10px 10px;
+  margin-left:-60px;
+ 
+
+}
+.forms_2{
+  background-color: #fff;
+  width: 430px;
+  padding:20px 20px 10px;
+  margin-left:-60px;
+  justify-content: space-between;
+ 
+}
+.form_3{
+  background-color: #7ea0b3;
+  width: 430px;
+  padding:20px 20px 10px;
+  margin-left:-60px;
+  justify-content: space-between;
+
+}
+.form_3 img{
+  padding-left: 55px;
+}
+
+.container .title{
+
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.new{
+  margin-left:65px;
+}
+
+.container.imag{
+  position:relative;
+  justify-content: center;
+  pointer-events:none;
+  z-index:-1;
+  padding-right:90px;
+
+}
+
+h2 {
+text-align: center;
+}
+
+label {
+display: block;
+margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-top: 5px;
+margin-bottom: 10px;
+box-sizing: border-box;
+}
+
+
+input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type="submit"]:hover {
+background-color:#2c782c;
+}
+.dropdown-menu{
+  display:none;
+  position:absolute;
+  background-color:#555;
+  z-index:1;
+}
+.dropdown:hover.dropdown-menu{
+  display:block;
+}
+.dropdown-menu li{
+  padding:10px;
+}
+.dropdown-menu li a{
+  color:#fff;
+  text-decoration:none;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-instagram{
+  background: #55ACEE;
+  color: white;
+}
